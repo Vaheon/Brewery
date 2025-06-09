@@ -132,7 +132,7 @@ public class P extends JavaPlugin {
 		BData.readData();
 
 		// Setup Metrics
-		stats.setupBStats();
+		//stats.setupBStats();
 
 		// Listeners
 		blockListener = new BlockListener();

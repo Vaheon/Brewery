@@ -3,7 +3,7 @@ package com.dre.brewery.utility;
 import com.dre.brewery.*;
 import com.dre.brewery.filedata.BConfig;
 import com.dre.brewery.recipe.BRecipe;
-import org.bstats.bukkit.Metrics;
+
 import org.bstats.charts.AdvancedPie;
 import org.bstats.charts.DrilldownPie;
 import org.bstats.charts.SimplePie;
@@ -41,11 +41,12 @@ public class Stats {
 			terr++;
 		}
 	}
-
+	;
 	public void setupBStats() {
 		try {
-			Metrics metrics = new Metrics(P.p, 3494);
-			metrics.addCustomChart(new SingleLineChart("drunk_players", BPlayer::numDrunkPlayers));
+			//Metrics metrics = new Metrics(P.p, 3494);
+
+			/* metrics.addCustomChart(new SingleLineChart("drunk_players", BPlayer::numDrunkPlayers));
 			metrics.addCustomChart(new SingleLineChart("brews_in_existence", () -> brewsCreated));
 			metrics.addCustomChart(new SingleLineChart("barrels_built", Barrel.barrels::size));
 			metrics.addCustomChart(new SingleLineChart("cauldrons_boiling", BCauldron.bcauldrons::size));
@@ -186,7 +187,7 @@ public class Stats {
 						return "none";
 					}
 				}
-			}));
+			}));*/
 		} catch (Exception | LinkageError e) {
 			e.printStackTrace();
 		}

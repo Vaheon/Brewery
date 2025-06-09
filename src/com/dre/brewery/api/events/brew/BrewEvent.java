@@ -9,7 +9,7 @@ public abstract class BrewEvent extends Event {
 	protected final Brew brew;
 	protected final ItemMeta meta;
 
-	public BrewEvent(@NotNull Brew brew, @NotNull ItemMeta meta) {
+	public BrewEvent(@NotNull Brew brew, ItemMeta meta) {
 		this.brew = brew;
 		this.meta = meta;
 	}
